@@ -1,13 +1,9 @@
-# def my_collect(empty_array) 
-#   array = ()
-# end 
-
 def my_collect(array)
   counter = 0
-  result = []
+  empty = []
    while counter < array.size
-    result << yield(array[counter])
+    empty << yield(array[counter])
     counter += 1
   end
-  result
+  empty
 end
